@@ -84,7 +84,7 @@ LocalStorage (high score saving)
 
 Just clone the repo and open index.html in any modern browser:
 
-git clone https://github.com/yourusername/yourrepo.git
+git clone [https://github.com/yourusername/yourrepo](https://github.com/nour968/Halloween_game).git
 cd yourrepo
 open index.html
 
