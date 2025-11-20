@@ -1,0 +1,172 @@
+   @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap'); 
+   :root {
+   --Sniglet-font: "Sniglet", cursive;
+   --Rubik: "Rubik", sans-serif;
+   --Patua: "Patua One", cursive;
+   --Lobster: "Lobster", cursive;}
+
+   body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* prevent scrollbars */
+    }
+    
+  #startBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 10;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #playBtn:hover {
+    background-color: #442604;
+  }
+
+
+  #startBox video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+    #bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* behind game objects */
+    }
+    /* Game container - full screen */
+    #gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;   
+    }
+
+    /* Basket */
+    #basket {
+      position: absolute;
+      bottom: 10px;
+      left: 220px;
+      width: 200px;
+      height: 175px;
+      background: url("assets/collecter.png");
+      background-size: contain;   /* scale inside the box */
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Falling objects */
+    .object {
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background-image: url("../assets/objectz.gif"); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
+    }
+   .hat{
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background-image: url("../assets/hat.gif"); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+   }
+    .candy{
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    background-image: url("../assets/candy.png"); /* adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+   }
+
+    /* Scoreboard */
+    #scoreboard {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Game Over screen */
+    #gameOver {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 24px;
+      font-family: var(--Patua);
+      display: none;
+      background-image: 
+      url("assets/imagre.png"),
+      linear-gradient(rgba(158, 120, 50, 0.653), rgba(117, 58, 7, 0.6));
+     background-size: 100%;
+     background-repeat: no-repeat;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+      border-radius: 10px;
+      border: 3px solid rgb(0, 0, 0);
+      padding: 15px;
+      z-index: 2;
+      width: 500px;
+      background:linear-gradient(orange,yellow,0.2) ;
+    }
+h1{
+      text-shadow: 
+          -1px -1px 0 black,  
+          1px -1px 0 black,
+          -1px  1px 0 black,
+          1px  1px 0 black;
+      -webkit-text-stroke:rgb(105, 58, 13) 1px;
+}
+
+#finalScore, #finalHighScore {
+  font-size: 20px;
+  font-family: var(--Patua);
+  margin: 10px 0;
+  border: 2px solid black;
+  padding: 20px;
+  font-weight: lighter;
+  text-align: left;
+  color: aliceblue;
+}
+
+    button{
+      margin-top: 10px;
+      padding: 8px 15px;
+      font-size: 30px;
+      cursor: pointer;
+      background-color: rgb(230, 120, 9);
+      border-radius: 10px;
+      padding: 15px;
+      font-family: var(--Sniglet-font);
+      width: 100%;
+      border: 3px dashed black;
+      color: aliceblue;
+    }    
