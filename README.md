@@ -2,7 +2,7 @@
 Catch the Falling Objects is an interactive browser game built using HTML, CSS, and Vanilla JavaScript. The player controls a basket and must catch falling items to earn points, gain extra lives, and avoid harmful objects. The game includes animations, background video, sound effects, and a start screen with a cinematic intro.
 
 # ▶️ Gameplay Preview
-([](https://drive.google.com/file/d/1CqPQOlkCRMN94jCM0enka7FYR9-bD_DY/view?usp=sharing))
+([click here](https://drive.google.com/file/d/1CqPQOlkCRMN94jCM0enka7FYR9-bD_DY/view?usp=sharing))
 
 # 🌟Overview
 Catch the Falling Objects is a fun and addictive browser game built with HTML, CSS, and JavaScript.
